@@ -1,0 +1,323 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+}
+
+/* header start */
+.head{
+    background-color: black;
+    height: 50px;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    gap: 900px;
+    align-items: center;
+}
+.an{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* header close */
+
+
+/* main body */
+.mainbody{
+    width: 100%;
+    height: 590px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main{
+    width: 90%;
+    height: 90%;
+    /* background-color: blue; */
+    display: flex;
+    gap: 20px;
+}
+
+.leftside{
+    /* background-color: black; */
+    flex: 2; /* 65% এর সমান */
+}
+
+.rightside{
+    background-color: black;
+    flex: 1; /* 35% এর সমান */
+}
+
+
+/* leftside */
+.images{
+    width: 100%;
+    height: 75%;
+    border-radius: 10px;
+}
+
+.mainimage{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    -webkit-transition: opacity 0.8s linear;
+    -moz-transition: opacity 0.8s linear;
+    transition: opacity 0.8s linear;
+}
+
+/* description */
+.description{
+    color: white;
+    margin-top: 10px;
+}
+
+/* rightsidemain */
+.rightsidemain{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width: 640px) {
+ 
+}
+
+@media (max-width: 768px) {
+ 
+}
+
+@media (max-width: 1024px) {
+ 
+}
+
+@media (max-width: 1280px) {
+ 
+}
+.tittle{
+    margin-top: 10px;
+    line-height: 25px;
+}
+.allModule{
+    width: 90%;
+    height: 90%;
+    /* background-color: white; */
+    overflow-y: scroll;
+}
+.orientation{
+    /* background-color: red; */
+    width: 90%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+}
+.center{
+    /* background-color: white; */
+    width: 90%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+
+}
+.module{
+    color: white;
+    margin-left: 20px;
+    font-size: 18px;
+    width: 90%;
+    /* background-color: red; */
+}
+
+.icon{
+    color: white;
+    margin-left: 5px;
+    font-size: 20px;
+}
+
+.borderbottom{
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid #3e434b;
+}
+.modulebottom{
+    margin-top: 5px;
+    margin-left: 10px;
+    width: 90%;
+    border-bottom: 1px solid #3e434b;
+}
+.moduletittle{
+    color: white; 
+    margin-left: 15px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+.hidden{
+    display: none;
+}
+
+.active-milestone {
+  font-weight: bold;
+}
+
+.doneList{
+    width: 100%;
+    height: auto;
+    color: white;
+    background-color:black;
+    margin-bottom: 50px;
+}
+.doneTittle{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  
+  font-size: 48px;
+  font-weight: bold;
+
+  /* Gradient background */
+  background: linear-gradient(90deg, #FFD700, #FFA500, #FF4500);
+
+  /* Text clipping */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  /* Modern browsers support */
+  background-clip: text;
+
+}
+
+
+
+/* media query */
+
+/* 1️⃣ width <= 1280px */
+@media (width <= 1280px) {
+  /* * {
+    background-color: red;
+  } */
+  .allModule {
+    height: 100%;
+}
+.head {
+    gap: 740px;
+}
+}
+
+@media (width <= 1424px) {
+    /* *{background-color: green;} */
+    .allModule {
+    height: 100%;
+}
+.module{
+    font-size: 12px;
+}
+.moduletittle{
+    font-size: 9px;
+}
+  .head {
+    gap: 780px;
+  }
+  .doneTittle {
+    font-size: 30px;
+  }
+}
+/* done */
+/* 2️⃣ width <= 1024px */
+@media (width <= 1024px) {
+    /* *{background-color: green;} */
+    .allModule {
+    height: 100%;
+}
+.module{
+    font-size: 12px;
+}
+.moduletittle{
+    font-size: 9px;
+}
+  .head {
+    gap: 530px;
+  }
+  .doneTittle {
+    font-size: 30px;
+  }
+}
+/* done */
+
+/* 3️⃣ 640px <= width <= 768px */
+@media (width <= 768px) {
+  /* * {
+    background-color: blue;
+  } */
+.main {
+    display: block;
+    margin-bottom: 10px;
+}
+.head {
+    gap: 320px;
+}
+.doneList{
+    margin-top: 670px;
+}
+.doneTittle{
+    font-size: 15px;
+}
+
+}
+
+/* 4️⃣ width <= 640px */
+@media (width <= 640px) {
+  /* * {
+    background-color: black;
+  } */
+      .allModule {
+    height: 100%;
+}
+.module{
+    font-size: 8px;
+}
+.moduletittle{
+    font-size: 5px;
+}
+  .head {
+    gap: 230px;
+  }
+  .doneTittle {
+    font-size: 20px;
+  }
+  .heading{
+    font-size: 20px;
+  }
+  .tittle{
+    font-size: 15px;
+  }
+}
+
+@media (width <= 425px) {
+
+.main {
+    display: block;
+    margin-bottom: 10px;
+}
+.head {
+    gap: 55px;
+}
+.doneList{
+    margin-top: 500px;
+}
+.doneTittle{
+    font-size: 15px;
+}
+}
+
+@media (width <= 320px) {
+.head {
+    gap: 50px;
+}
+.an{
+    font-size: 13px;
+}
+}
